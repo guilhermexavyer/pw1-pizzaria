@@ -28,7 +28,7 @@ body
 
 header
 {
-    border-bottom: 2px solid var(--cor-borda);
+    box-shadow: 0px 4px 5px 3px #6e6e6e42;
     color: var(--cor-branca);
     padding: 15px;
 
@@ -185,7 +185,7 @@ main h1
 /* FIM DO CONTEÚDO */
 
 footer {
-    border-top: 2px solid var(--cor-borda);
+    box-shadow: 0px -4px 5px 3px #6e6e6e42;
     padding: 15px;
     text-align: center;
 }

@@ -3,10 +3,11 @@
 :root
 {
     --cor-borda: #dbdbdb;
+    --cor-botao: #690000;
     --cor-branca: #ffffff;
-    --cor-nota: #ffae00;
     --cor-principal: #db0006;
     --cor-principal-hover: #db0007bd;
+    --linear-gradient: linear-gradient(to right, #940005, #b40006, #940005);
 }
 
 *
@@ -97,7 +98,7 @@ header
 /* INÍCIO DO CONTEÚDO */
 main
 {
-    gap: 30px;
+    gap: 20px;
     padding: 20px;
 
     flex-grow: 1;
@@ -107,55 +108,85 @@ main
     align-items: center;
 }
 
-#imagem_principal
-{
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px 4px #00000042;
-}
-
-.destaque
+main h1
 {
     text-align: center;
+}
+
+.conteudo-formulario
+{
+    box-shadow: 0px 4px 5px 3px #00000042;
     width: 100%;
 }
 
-.pizzas-destaques
+.formulario
 {
-    padding-top: 20px;
+    background: var(--linear-gradient);
+    border-radius: 5px;
+    padding: 15px;
 
     display: flex;
     justify-content: space-around;
 }
 
-.pizza
+form
 {
-    background-color: var(--cor-principal);
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#input-form
+{
+    border: 3px solid transparent;
     border-radius: 5px;
-    box-shadow: 0px 2px 10px 4px #00000042;
-    color: #ffffff;
-    cursor: default;
+    cursor: text;
+    margin-bottom: 5px;
+    padding: 5px;
+    transition: 0.2s;
+    width: 100%;
+}
+
+#input-form:focus
+{
+    border: 3px solid var(--cor-botao);
+    outline: none;
     transition: 0.2s;
 }
 
-.pizza h4
+#botao
 {
+    background: var(--cor-botao);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    outline: none;
     padding: 5px;
+    transition: 0.2s;
 }
 
-.pizza img
+#botao:hover
 {
-    display: block;
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
-.pizza-nota
+#botao:focus
 {
-    color: var(--cor-nota);
-    padding: 5px;
-}
-
-.pizza:hover
-{
-    transform: scale(1.01);
+    transform: scale(1.02);
     transition: 0.2s;
 }
 /* FIM DO CONTEÚDO */
