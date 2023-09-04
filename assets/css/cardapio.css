@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root
+{
+    --cor-borda: #dbdbdb;
+    --cor-branca: #ffffff;
+    --cor-principal: #db0006;
+    --cor-principal-hover: #db0007bd;
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    border-bottom: 2px solid var(--cor-borda);
+    color: var(--cor-branca);
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu, .busca
+{
+    display: flex;
+    align-items: center;
+}
+
+.menu img
+{
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.menu a
+{
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: var(--cor-principal);
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+    outline: none;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu a:hover
+{
+    background-color: var(--cor-principal);
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.menu a:focus
+{
+    background-color: var(--cor-principal);
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.busca input
+{
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    width: 500px;
+}
+
+.busca i
+{
+    color: var(--cor-principal);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* INÍCIO DO CONTEÚDO */
+main
+{
+    gap: 40px;
+    padding: 20px;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1
+{
+    text-align: center;
+}
+
+.cardapio
+{
+    width: 100%;
+}
+
+.cardapio h3
+{
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 2px #00000042;
+    color: white;
+    margin-bottom: 15px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.alimento
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sabor
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sabor img
+{
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 2px #00000042;
+}
+
+.sabor button
+{
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 3px #00000042;
+    color: var(--cor-branca);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.sabor button:hover
+{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.sabor button:focus
+{
+    outline: none;
+}
+
+.descricao-sabor h4
+{
+    font-size: 15px;
+}
+
+.descricao-sabor p
+{   
+    font-size: 12px;
+}
+/* FIM DO CONTEÚDO */
+
+footer {
+    border-top: 2px solid var(--cor-borda);
+    padding: 15px;
+    text-align: center;
+}
+
+footer hr
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rodape-menu
+{
+    cursor: default;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape-menu-site a
+{
+    color: var(--cor-principal);
+    font-weight: 600;
+    margin-right: 20px;
+    outline: none;
+    text-decoration: none;
+}
+
+.rodape-menu-site a:hover
+{
+    text-decoration: underline;
+}
+
+.rodape-menu-site a:focus
+{
+    text-decoration: underline;
+}
+
+.rodape-menu-social a
+{
+    color: var(--cor-principal);
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.rodape-menu-social a:hover
+{
+    color: var(--cor-principal-hover);
+    transition: 0.2s;
+}
+
+.rodape-menu-social a:focus
+{
+    color: var(--cor-principal-hover);
+    transition: 0.2s;
+}
