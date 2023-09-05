@@ -9,3 +9,23 @@ busca_icon.addEventListener("click", function() {
 logo.addEventListener("click", function() {
     window.location.href = "index.html";
 });
+
+document.addEventListener("DOMContentLoaded", function ()
+{
+    var currentPage = window.location.href;
+    var menuLinks = document.querySelectorAll(".menu a");
+
+    for (var i = 0; i < menuLinks.length; i++)
+    {
+      var link = menuLinks[i];
+
+      if (link.href === currentPage)
+      {
+        link.classList.add("active");
+      }
+      else
+      {
+        link.classList.remove("active");
+      }
+    }
+});

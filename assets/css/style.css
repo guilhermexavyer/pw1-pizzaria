@@ -77,6 +77,12 @@ header
     transition: 0.2s;
 }
 
+.menu a.active
+{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+}
+
 .busca input
 {
     background-color: #f2f2f2;

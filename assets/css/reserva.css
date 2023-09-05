@@ -7,7 +7,7 @@
     --cor-branca: #ffffff;
     --cor-principal: #db0006;
     --cor-principal-hover: #db0007bd;
-    --linear-gradient: linear-gradient(to right, #940005, #b40006, #940005);
+    --linear-gradient: linear-gradient(to right, #940005, #ef0008, #940005);
 }
 
 *
@@ -76,6 +76,12 @@ header
     background-color: var(--cor-principal);
     color: #ffffff;
     transition: 0.2s;
+}
+
+.menu a.active
+{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
 }
 
 .busca input
